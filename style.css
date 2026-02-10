@@ -1,0 +1,93 @@
+/* Page background */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top, #1e90ff, #020024);
+    font-family: Arial, sans-serif;
+}
+
+/* Form container */
+form {
+    background: rgba(0, 0, 40, 0.85);
+    padding: 30px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow:
+        0 0 20px rgba(0, 140, 255, 0.7),
+        0 0 40px rgba(0, 140, 255, 0.4);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #ffffff;
+   margin-bottom: 20px;
+    text-shadow:
+        0 0 5px #1e90ff,
+        0 0 10px #1e90ff,
+        0 0 20px #00bfff,
+        0 0 40px rgba(0, 191, 255, 0.8);
+}
+
+/* Labels and inputs */
+label {
+    display: block;
+    margin-bottom: 15px;
+    color: #bcdcff;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: #020024;
+    color: #ffffff;
+}
+
+/* Input glow on focus */
+input:focus {
+    box-shadow: 0 0 10px #1e90ff;
+}
+
+/* Error text */
+.error-message {
+    color: #ff6b6b;
+    font-size: 0.85em;
+}
+
+/* Invalid input */
+.invalid {
+    box-shadow: 0 0 8px #ff4d4d;
+}
+
+/* Submit button */
+button {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #1e90ff, #00bfff);
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+button:hover:enabled {
+    box-shadow: 0 0 15px #1e90ff;
+}
+
+/* Disabled button */
+button:disabled {
+    background: #555;
+    cursor: not-allowed;
+    box-shadow: none;
+}
